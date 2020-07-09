@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::resource('v1/user', 'v1\UserController');
+Route::resource('v1/book', 'v1\BookController');
