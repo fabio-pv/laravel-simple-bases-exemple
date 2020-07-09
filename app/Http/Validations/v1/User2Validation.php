@@ -7,7 +7,7 @@ namespace App\Http\Validations\v1;
 use Illuminate\Http\Request;
 use LaravelSimpleBases\Http\Validations\BaseValidation;
 
-class UserValidation extends BaseValidation
+class User2Validation extends BaseValidation
 {
 
     public function validate(Request $request, $method)
