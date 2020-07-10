@@ -1219,12 +1219,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabio-pv/laravel-simple-bases.git",
-                "reference": "46db5a5bd0e0b30728155f680d24f8c6ae20091f"
+                "reference": "8306049406c59a8de93fe856c149340e630ae6f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/46db5a5bd0e0b30728155f680d24f8c6ae20091f",
-                "reference": "46db5a5bd0e0b30728155f680d24f8c6ae20091f",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/8306049406c59a8de93fe856c149340e630ae6f0",
+                "reference": "8306049406c59a8de93fe856c149340e630ae6f0",
                 "shasum": ""
             },
             "require": {
@@ -1259,7 +1259,7 @@
                 "MIT"
             ],
             "description": "A set of base classes to help create projects with Laravel",
-            "time": "2020-07-09T18:08:53+00:00"
+            "time": "2020-07-10T12:30:26+00:00"
         },
         {
             "name": "facade/ignition-contracts",

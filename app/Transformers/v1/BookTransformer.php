@@ -3,6 +3,7 @@
 namespace App\Transformers\v1;
 
 use App\Models\v1\Book;
+use LaravelSimpleBases\Transformers\FileTransformer;
 use League\Fractal\TransformerAbstract;
 
 class BookTransformer extends TransformerAbstract
@@ -35,6 +36,11 @@ class BookTransformer extends TransformerAbstract
         return [
             'uuid' => $book->uuid,
             'name' => $book->name,
+            'file' => fractal_transformer(
+                $book->files,
+                FileTransformer::class,
+                null
+            ),
         ];
     }
 }

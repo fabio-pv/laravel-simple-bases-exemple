@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'model::class' => [
+    \App\Models\v1\Book::class => [
         'fantasy_property' => 'photo',
-        'save_location' => '/photos/property_item',
+        'save_location' => '/photos/books',
         'extension' => '.png'
     ],
 ];
