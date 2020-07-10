@@ -2,6 +2,7 @@
 
 namespace App\Models\v1;
 
+use LaravelSimpleBases\Models\ModelAuthenticatableBase;
 use LaravelSimpleBases\Models\ModelBase;
 
 /**
@@ -16,11 +17,11 @@ use LaravelSimpleBases\Models\ModelBase;
  * @property string $updated_at
  * @property string $deleted_at
  */
-class User extends ModelBase
+class User extends ModelAuthenticatableBase
 {
     /**
      * The "type" of the auto-incrementing ID.
-     * 
+     *
      * @var string
      */
     protected $keyType = 'integer';
