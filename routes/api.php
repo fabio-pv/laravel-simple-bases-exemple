@@ -18,3 +18,5 @@ Route::post('v1/login', 'v1\AuthController@login');
 
 Route::resource('v1/user', 'v1\UserController');
 Route::resource('v1/book', 'v1\BookController');
+Route::resource('v1/car', 'v1\CarController');
+
