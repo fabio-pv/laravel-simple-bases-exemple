@@ -3,10 +3,10 @@
 namespace App\Models\v1;
 
 use LaravelSimpleBases\Models\ModelAuthenticatableBase;
-use LaravelSimpleBases\Models\ModelBase;
 
 /**
  * @property integer $id
+ * @property integer $car_id
  * @property string $uuid
  * @property string $name
  * @property string $email
@@ -16,6 +16,7 @@ use LaravelSimpleBases\Models\ModelBase;
  * @property string $created_at
  * @property string $updated_at
  * @property string $deleted_at
+ * @property Car $car
  */
 class User extends ModelAuthenticatableBase
 {
@@ -29,6 +30,13 @@ class User extends ModelAuthenticatableBase
     /**
      * @var array
      */
-    protected $fillable = ['uuid', 'name', 'email', 'email_verified_at', 'password', 'remember_token', 'created_at', 'updated_at', 'deleted_at'];
+    protected $fillable = ['car_id', 'uuid', 'name', 'email', 'email_verified_at', 'password', 'remember_token', 'created_at', 'updated_at', 'deleted_at'];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function car()
+    {
+        return $this->belongsTo('App\Models\v1\Car');
+    }
 }

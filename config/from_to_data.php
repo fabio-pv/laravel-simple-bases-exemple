@@ -1,10 +1,12 @@
 <?php
 
 return [
-    'model::class' => [
-        'property_param' => [
-            'model' => 'Model::class',
-            'property' => 'property_database'
+    \App\Models\v1\User::class => [
+
+        'car_uuid' => [
+            'model' => \App\Models\v1\Car::class,
+            'property' => 'car_id'
         ],
+
     ]
 ];
