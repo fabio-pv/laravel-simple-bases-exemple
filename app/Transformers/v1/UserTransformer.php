@@ -26,8 +26,7 @@ class UserTransformer extends TransformerAbstract
     ];
 
     /**
-     * A Fractal transformer.
-     *
+     * @param User $user
      * @return array
      */
     public function transform(User $user)
@@ -35,6 +34,11 @@ class UserTransformer extends TransformerAbstract
         return [
             'uuid' => $user->uuid,
             'name' => $user->name,
+            'car' => fractal_transformer(
+                $user->car,
+                CarTransformer::class,
+                null
+            ),
         ];
     }
 }
