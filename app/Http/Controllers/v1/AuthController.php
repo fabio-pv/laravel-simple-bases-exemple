@@ -8,5 +8,4 @@ use LaravelSimpleBases\Http\Controllers\BaseAuth;
 
 class AuthController extends BaseAuth
 {
-
 }
