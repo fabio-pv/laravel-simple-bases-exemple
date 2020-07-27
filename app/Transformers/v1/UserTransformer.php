@@ -3,6 +3,7 @@
 namespace App\Transformers\v1;
 
 use App\Models\v1\User;
+use LaravelSimpleBases\Transformers\FileTransformer;
 use League\Fractal\TransformerAbstract;
 
 class UserTransformer extends TransformerAbstract
@@ -34,6 +35,11 @@ class UserTransformer extends TransformerAbstract
         return [
             'uuid' => $user->uuid,
             'name' => $user->name,
+            'file' => fractal_transformer(
+                $user->files,
+                FileTransformer::class,
+                null
+            ),
             'car' => fractal_transformer(
                 $user->car,
                 CarTransformer::class,
