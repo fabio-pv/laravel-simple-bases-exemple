@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d3d15f5ca7a5b39490f4bfb07514933",
+    "content-hash": "8995efe1a7f93d3a9c6ad739079d8a9c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1215,23 +1215,23 @@
         },
         {
             "name": "fabio/laravel-simple-bases",
-            "version": "0.4.0",
+            "version": "dev-BUG/fix-namespace",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabio-pv/laravel-simple-bases.git",
-                "reference": "dfeed0376ab435ff7809e53581d22e52ed1b4606"
+                "reference": "6c93c6f9114c3bf0c8dca41e7042ef551572b4ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/dfeed0376ab435ff7809e53581d22e52ed1b4606",
-                "reference": "dfeed0376ab435ff7809e53581d22e52ed1b4606",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/6c93c6f9114c3bf0c8dca41e7042ef551572b4ea",
+                "reference": "6c93c6f9114c3bf0c8dca41e7042ef551572b4ea",
                 "shasum": ""
             },
             "require": {
                 "barryvdh/laravel-ide-helper": "^2.6",
                 "krlove/eloquent-model-generator": "^1.3",
                 "mpociot/laravel-apidoc-generator": "^4.4",
-                "php": ">=7.2.0",
+                "php": "^7.2.0",
                 "spatie/laravel-activitylog": "^3.14",
                 "spatie/laravel-fractal": "^5.7.0",
                 "tymon/jwt-auth": "^1.0",
@@ -1259,8 +1259,23 @@
             "license": [
                 "MIT"
             ],
+            "authors": [
+                {
+                    "name": "Fábio Pacheco",
+                    "email": "fabiopv1994@gmail.com",
+                    "homepage": "https://github.com/fabio-pv",
+                    "role": "Developer"
+                }
+            ],
             "description": "A set of base classes to help create projects with Laravel",
-            "time": "2020-08-05T13:58:49+00:00"
+            "homepage": "https://github.com/fabio-pv/laravel-simple-bases",
+            "keywords": [
+                "api",
+                "fabio-pv",
+                "filters",
+                "rest"
+            ],
+            "time": "2020-08-13T17:42:16+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -7858,6 +7873,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -8735,7 +8751,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "fabio/laravel-simple-bases": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
