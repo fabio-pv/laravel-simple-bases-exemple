@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b7d6e53fcd91899421f918cad64e5db",
+    "content-hash": "6d3d15f5ca7a5b39490f4bfb07514933",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1215,16 +1215,16 @@
         },
         {
             "name": "fabio/laravel-simple-bases",
-            "version": "0.3.0",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabio-pv/laravel-simple-bases.git",
-                "reference": "ade797a7cd57ff9ab463779f36a79cee58c41c3f"
+                "reference": "dfeed0376ab435ff7809e53581d22e52ed1b4606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/ade797a7cd57ff9ab463779f36a79cee58c41c3f",
-                "reference": "ade797a7cd57ff9ab463779f36a79cee58c41c3f",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/dfeed0376ab435ff7809e53581d22e52ed1b4606",
+                "reference": "dfeed0376ab435ff7809e53581d22e52ed1b4606",
                 "shasum": ""
             },
             "require": {
@@ -1260,7 +1260,7 @@
                 "MIT"
             ],
             "description": "A set of base classes to help create projects with Laravel",
-            "time": "2020-07-27T17:29:44+00:00"
+            "time": "2020-08-05T13:58:49+00:00"
         },
         {
             "name": "facade/ignition-contracts",
