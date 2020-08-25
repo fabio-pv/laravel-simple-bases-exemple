@@ -20,4 +20,5 @@ Route::resource('v1/user', 'v1\UserController');
 Route::resource('v1/book', 'v1\BookController');
 Route::resource('v1/car', 'v1\CarController');
 Route::resource('v1/car-type', 'v1\CarTypeController');
+Route::resource('v1/user-role', 'v1\UserRoleController');
 
