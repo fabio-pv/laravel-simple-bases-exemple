@@ -13,6 +13,8 @@ use LaravelSimpleBases\Models\ModelAuthenticatableBase;
  * @property string $email_verified_at
  * @property string $password
  * @property string $remember_token
+ * @property integer $user_role_id
+ * @property UserRole $userRole
  * @property string $created_at
  * @property string $updated_at
  * @property string $deleted_at
@@ -38,5 +40,13 @@ class User extends ModelAuthenticatableBase
     public function car()
     {
         return $this->belongsTo('App\Models\v1\Car');
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function userRole()
+    {
+        return $this->belongsTo('App\Models\v1\UserRole');
     }
 }

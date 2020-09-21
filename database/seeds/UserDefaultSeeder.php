@@ -16,5 +16,12 @@ class UserDefaultSeeder extends Seeder
         $model->email = 'default@app.com';
         $model->password = bcrypt('1234');
         $model->save();
+
+        $model = new \App\Models\v1\User();
+        $model->name = 'common';
+        $model->email = 'common@app.com';
+        $model->password = bcrypt('1234');
+        $model->save();
+
     }
 }
