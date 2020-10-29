@@ -21,5 +21,3 @@ Route::apiResource('v1/book', 'v1\BookController');
 Route::apiResource('v1/car-type', 'v1\CarTypeController');
 Route::apiResource('v1/user-role', 'v1\UserRoleController');
 Route::apiResource('v1/car', 'v1\CarController');
-
-Route::post('deploy', 'DeployController@start');
