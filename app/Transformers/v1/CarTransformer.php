@@ -3,7 +3,6 @@
 namespace App\Transformers\v1;
 
 use App\Models\v1\Car;
-use LaravelSimpleBases\Transformers\FileTransformer;
 use League\Fractal\TransformerAbstract;
 
 class CarTransformer extends TransformerAbstract
@@ -34,19 +33,9 @@ class CarTransformer extends TransformerAbstract
     {
         return [
             'uuid' => $car->uuid,
-            'name' => $car->name,
+            'name' => $car->license_plate,
             'license_plate' => $car->license_plate,
             'motor_power' => $car->motor_power,
-            'car_type' => fractal_transformer(
-                $car->carType,
-                CarTypeTransformer::class,
-                null
-            ),
-            'files' => fractal_transformer(
-                $car->files,
-                FileTransformer::class,
-                null
-            )
         ];
     }
 }
