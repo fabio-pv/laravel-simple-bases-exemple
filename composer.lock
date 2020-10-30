@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c00d3d45bf38ed4f9db33547f8fd0140",
+    "content-hash": "0b12e3f7f217ea9422a2fc32dcc93ec9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1233,6 +1233,63 @@
                 "source": "https://github.com/fabio-pv/laravel-simple-bases/tree/v0.7.1"
             },
             "time": "2020-10-22T00:03:32+00:00"
+        },
+        {
+            "name": "fabio/laravel-simple-deploye",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabio-pv/laravel-simple-deploye.git",
+                "reference": "566f51efbdeaede8cc5d0c54023b9d926c5428f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-deploye/zipball/566f51efbdeaede8cc5d0c54023b9d926c5428f3",
+                "reference": "566f51efbdeaede8cc5d0c54023b9d926c5428f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelSimpleDeploye\\Providers\\LaravelSimpleDeployeProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelSimpleDeploye\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fábio Pacheco",
+                    "email": "fabiopv1994@gmail.com",
+                    "homepage": "https://github.com/fabio-pv",
+                    "role": "Developer"
+                }
+            ],
+            "description": "...",
+            "homepage": "https://github.com/fabio-pv/laravel-simple-deploye",
+            "keywords": [
+                "api",
+                "deploy",
+                "fabio-pv",
+                "rest"
+            ],
+            "support": {
+                "issues": "https://github.com/fabio-pv/laravel-simple-deploye/issues",
+                "source": "https://github.com/fabio-pv/laravel-simple-deploye/tree/master"
+            },
+            "time": "2020-10-30T15:04:52+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -2574,6 +2631,55 @@
                 "serialize"
             ],
             "time": "2020-06-17T14:59:55+00:00"
+        },
+        {
+            "name": "php-parallel-lint/php-console-color",
+            "version": "v0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-parallel-lint/PHP-Console-Color.git",
+                "reference": "b6af326b2088f1ad3b264696c9fd590ec395b49e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Color/zipball/b6af326b2088f1ad3b264696c9fd590ec395b49e",
+                "reference": "b6af326b2088f1ad3b264696c9fd590ec395b49e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "replace": {
+                "jakub-onderka/php-console-color": "*"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-code-style": "1.0",
+                "php-parallel-lint/php-parallel-lint": "1.0",
+                "php-parallel-lint/php-var-dump-check": "0.*",
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JakubOnderka\\PhpConsoleColor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Onderka",
+                    "email": "jakub.onderka@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/php-parallel-lint/PHP-Console-Color/issues",
+                "source": "https://github.com/php-parallel-lint/PHP-Console-Color/tree/master"
+            },
+            "time": "2020-05-14T05:47:14+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -6047,6 +6153,57 @@
             "time": "2020-06-15T23:49:30+00:00"
         },
         {
+            "name": "web64/laravel-cli-colors",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/web64/laravel-cli-colors.git",
+                "reference": "16c48e9102d20a496cac4172313500b5083cf6e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/web64/laravel-cli-colors/zipball/16c48e9102d20a496cac4172313500b5083cf6e9",
+                "reference": "16c48e9102d20a496cac4172313500b5083cf6e9",
+                "shasum": ""
+            },
+            "require": {
+                "php-parallel-lint/php-console-color": "^0.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Web64\\Colors\\ColorsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Colors": "Web64\\Colors\\Facades\\Colors"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Web64\\Colors\\": "src/Colors"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Olav Hjertaker",
+                    "email": "olav.hjertaker@gmail.com"
+                }
+            ],
+            "description": "Laravel package for generating CLI output with awesome colors!",
+            "support": {
+                "issues": "https://github.com/web64/laravel-cli-colors/issues",
+                "source": "https://github.com/web64/laravel-cli-colors/tree/v0.20"
+            },
+            "time": "2020-09-27T17:36:33+00:00"
+        },
+        {
             "name": "webpatser/laravel-uuid",
             "version": "3.0.2",
             "source": {
@@ -8151,7 +8308,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "fabio/laravel-simple-deploye": 20,
+        "web64/laravel-cli-colors": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
