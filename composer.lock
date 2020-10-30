@@ -1366,12 +1366,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabio-pv/laravel-simple-deploy.git",
-                "reference": "b5f1bd38caf0ff4b9701275a441e318eedd2c17b"
+                "reference": "6efb64e091f991ba4a0a2e571f97a9183d027644"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-deploy/zipball/b5f1bd38caf0ff4b9701275a441e318eedd2c17b",
-                "reference": "b5f1bd38caf0ff4b9701275a441e318eedd2c17b",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-deploy/zipball/6efb64e091f991ba4a0a2e571f97a9183d027644",
+                "reference": "6efb64e091f991ba4a0a2e571f97a9183d027644",
                 "shasum": ""
             },
             "require": {
@@ -1415,7 +1415,7 @@
                 "issues": "https://github.com/fabio-pv/laravel-simple-deploy/issues",
                 "source": "https://github.com/fabio-pv/laravel-simple-deploy/tree/master"
             },
-            "time": "2020-10-30T16:55:22+00:00"
+            "time": "2020-10-30T17:07:18+00:00"
         },
         {
             "name": "fideloper/proxy",
