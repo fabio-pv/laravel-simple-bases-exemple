@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "520d5b4900a077316a03894255d871d6",
+    "content-hash": "a6e6f624bbdef6b2e74bbc5d56427d53",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1361,17 +1361,17 @@
             "time": "2020-10-22T00:03:32+00:00"
         },
         {
-            "name": "fabio/laravel-simple-deploye",
+            "name": "fabio/laravel-simple-deploy",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fabio-pv/laravel-simple-deploye.git",
-                "reference": "566f51efbdeaede8cc5d0c54023b9d926c5428f3"
+                "url": "https://github.com/fabio-pv/laravel-simple-deploy.git",
+                "reference": "b5f1bd38caf0ff4b9701275a441e318eedd2c17b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-deploye/zipball/566f51efbdeaede8cc5d0c54023b9d926c5428f3",
-                "reference": "566f51efbdeaede8cc5d0c54023b9d926c5428f3",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-deploy/zipball/b5f1bd38caf0ff4b9701275a441e318eedd2c17b",
+                "reference": "b5f1bd38caf0ff4b9701275a441e318eedd2c17b",
                 "shasum": ""
             },
             "require": {
@@ -1382,13 +1382,13 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "LaravelSimpleDeploye\\Providers\\LaravelSimpleDeployeProvider"
+                        "LaravelSimpleDeploy\\Providers\\LaravelSimpleDeployProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "LaravelSimpleDeploye\\": "src/"
+                    "LaravelSimpleDeploy\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1404,7 +1404,7 @@
                 }
             ],
             "description": "...",
-            "homepage": "https://github.com/fabio-pv/laravel-simple-deploye",
+            "homepage": "https://github.com/fabio-pv/laravel-simple-deploy",
             "keywords": [
                 "api",
                 "deploy",
@@ -1412,10 +1412,10 @@
                 "rest"
             ],
             "support": {
-                "issues": "https://github.com/fabio-pv/laravel-simple-deploye/issues",
-                "source": "https://github.com/fabio-pv/laravel-simple-deploye/tree/master"
+                "issues": "https://github.com/fabio-pv/laravel-simple-deploy/issues",
+                "source": "https://github.com/fabio-pv/laravel-simple-deploy/tree/master"
             },
-            "time": "2020-10-30T15:04:52+00:00"
+            "time": "2020-10-30T16:55:22+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -8720,7 +8720,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "fabio/laravel-simple-deploye": 20
+        "fabio/laravel-simple-deploy": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
