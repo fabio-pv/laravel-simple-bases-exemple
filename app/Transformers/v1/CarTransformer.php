@@ -37,11 +37,7 @@ class CarTransformer extends TransformerAbstract
             'name' => $car->license_plate,
             'license_plate' => $car->license_plate,
             'motor_power' => $car->motor_power,
-            'files' => fractal_transformer(
-                $car->files,
-                FileTransformer::class,
-                null
-            )
+            'files' => $car->filesToTransformer(),
         ];
     }
 }

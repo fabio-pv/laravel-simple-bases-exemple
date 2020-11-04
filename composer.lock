@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0d1aa9a2671a884fa766a873a276385",
+    "content-hash": "ecfa1f4a5a65136368b7287749b605f9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1295,16 +1295,16 @@
         },
         {
             "name": "fabio/laravel-simple-bases",
-            "version": "0.7.1",
+            "version": "0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabio-pv/laravel-simple-bases.git",
-                "reference": "bc732d2ec90913c59c451d471937eab0eca47428"
+                "reference": "8db59b57b97fb6742494237eb347bae2e8c94a07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/bc732d2ec90913c59c451d471937eab0eca47428",
-                "reference": "bc732d2ec90913c59c451d471937eab0eca47428",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/8db59b57b97fb6742494237eb347bae2e8c94a07",
+                "reference": "8db59b57b97fb6742494237eb347bae2e8c94a07",
                 "shasum": ""
             },
             "require": {
@@ -1356,9 +1356,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fabio-pv/laravel-simple-bases/issues",
-                "source": "https://github.com/fabio-pv/laravel-simple-bases/tree/v0.7.1"
+                "source": "https://github.com/fabio-pv/laravel-simple-bases/tree/v0.7.2"
             },
-            "time": "2020-10-22T00:03:32+00:00"
+            "time": "2020-11-04T12:59:48+00:00"
         },
         {
             "name": "fabio/laravel-simple-deploy",
@@ -2891,6 +2891,55 @@
                 "source": "https://github.com/opis/closure/tree/3.6.0"
             },
             "time": "2020-10-11T21:42:15+00:00"
+        },
+        {
+            "name": "php-parallel-lint/php-console-color",
+            "version": "v0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-parallel-lint/PHP-Console-Color.git",
+                "reference": "b6af326b2088f1ad3b264696c9fd590ec395b49e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Color/zipball/b6af326b2088f1ad3b264696c9fd590ec395b49e",
+                "reference": "b6af326b2088f1ad3b264696c9fd590ec395b49e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "replace": {
+                "jakub-onderka/php-console-color": "*"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-code-style": "1.0",
+                "php-parallel-lint/php-parallel-lint": "1.0",
+                "php-parallel-lint/php-var-dump-check": "0.*",
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JakubOnderka\\PhpConsoleColor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Onderka",
+                    "email": "jakub.onderka@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/php-parallel-lint/PHP-Console-Color/issues",
+                "source": "https://github.com/php-parallel-lint/PHP-Console-Color/tree/master"
+            },
+            "time": "2020-05-14T05:47:14+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -6630,6 +6679,57 @@
             "time": "2020-07-22T23:32:04+00:00"
         },
         {
+            "name": "web64/laravel-cli-colors",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/web64/laravel-cli-colors.git",
+                "reference": "16c48e9102d20a496cac4172313500b5083cf6e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/web64/laravel-cli-colors/zipball/16c48e9102d20a496cac4172313500b5083cf6e9",
+                "reference": "16c48e9102d20a496cac4172313500b5083cf6e9",
+                "shasum": ""
+            },
+            "require": {
+                "php-parallel-lint/php-console-color": "^0.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Web64\\Colors\\ColorsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Colors": "Web64\\Colors\\Facades\\Colors"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Web64\\Colors\\": "src/Colors"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Olav Hjertaker",
+                    "email": "olav.hjertaker@gmail.com"
+                }
+            ],
+            "description": "Laravel package for generating CLI output with awesome colors!",
+            "support": {
+                "issues": "https://github.com/web64/laravel-cli-colors/issues",
+                "source": "https://github.com/web64/laravel-cli-colors/tree/v0.20"
+            },
+            "time": "2020-09-27T17:36:33+00:00"
+        },
+        {
             "name": "webpatser/laravel-uuid",
             "version": "3.0.2",
             "source": {
@@ -8719,7 +8819,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "web64/laravel-cli-colors": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
