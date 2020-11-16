@@ -41,6 +41,7 @@ class UserTransformer extends TransformerAbstract
                 CarTransformer::class,
                 null
             ),
+            'files' => $user->filesToTransformer(),
         ];
     }
 }
