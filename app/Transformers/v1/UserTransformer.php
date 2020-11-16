@@ -35,11 +35,7 @@ class UserTransformer extends TransformerAbstract
         return [
             'uuid' => $user->uuid,
             'name' => $user->name,
-            'file' => fractal_transformer(
-                $user->files,
-                FileTransformer::class,
-                null
-            ),
+            'file' => $user->filesToTransformer(),
             'car' => fractal_transformer(
                 $user->car,
                 CarTransformer::class,
