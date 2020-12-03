@@ -8,16 +8,48 @@ return [
 
     'branch' => env('LARAVEL_SIMPLE_DEPLOYER__BRANCH', 'master'),
 
-    'git_pull' => env('LARAVEL_SIMPLE_DEPLOYER__GIT_PULL', false),
-    'git_type_auth' => env('LARAVEL_SIMPLE_DEPLOYER__GIT_AUTH', 'http'),
-    'git_type_http_username' => env('LARAVEL_SIMPLE_DEPLOYER__GIT_TYPE_HTTP_USERNAME'),
-    'git_type_http_password' => env('LARAVEL_SIMPLE_DEPLOYER__GIT_TYPE_HTTP_PASSWORD'),
-    'git_type_http_repo' => env('LARAVEL_SIMPLE_DEPLOYER__GIT_TYPE_HTTP_REPO'),
+    'git_update' => env('LARAVEL_SIMPLE_DEPLOYER__GIT_UPDATE', true),
 
-    'composer_install' => env('LARAVEL_SIMPLE_DEPLOYER__COMPOSER_INSTALL', false),
+    'custom_artisan_command' => [
 
-    'composer_update' => env('LARAVEL_SIMPLE_DEPLOYER_COMPOSER_UPDATE', false),
+        'Cache' => [
+            'config:cache' => [
 
-    'artisan_migrate' => env('LARAVEL_SIMPLE_DEPLOYER_ARTISAN_MIGRATE', false),
+            ],
+        ],
+
+        'Migrate' => [
+            'migrate' => [
+                '--force' => true
+            ]
+        ],
+
+        'Api Doc' => [
+            'apidoc:generate' => [
+
+            ],
+        ],
+
+    ],
+
+    'custom_command_shell' => [
+
+        'Composer' => 'export COMPOSER_HOME=$HOME/.composer; cd .. && composer update 2>&1'
+
+    ],
+
+    'mail' => [
+
+        'deployMailEnabled' => env('LARAVEL_SIMPLE_DEPLOYER__MAIL_ENABLED'),
+        'deployMailMailer' => env('LARAVEL_SIMPLE_DEPLOYER__MAIL_MAILER'),
+        'deployMailHost' => env('LARAVEL_SIMPLE_DEPLOYER__MAIL_HOST'),
+        'deployMailPort' => env('LARAVEL_SIMPLE_DEPLOYER__MAIL_PORT'),
+        'deployMailUsername' => env('LARAVEL_SIMPLE_DEPLOYER__MAIL_USERNAME'),
+        'deployMailPassword' => env('LARAVEL_SIMPLE_DEPLOYER__MAIL_PASSWORD'),
+        'deployMailFrom' => env('LARAVEL_SIMPLE_DEPLOYER__MAIL_FROM'),
+        'deployMailTo' => env('LARAVEL_SIMPLE_DEPLOYER__MAIL_TO'),
+
+    ],
 
 ];
+
