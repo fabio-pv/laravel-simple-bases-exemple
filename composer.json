@@ -10,7 +10,7 @@
     "require": {
         "php": "^7.4",
         "fabio/laravel-simple-bases": "^0.8.4",
-        "fabio/laravel-simple-deploy": "^0.0.15",
+        "fabio/laravel-simple-deploy": "^0.0.16",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",

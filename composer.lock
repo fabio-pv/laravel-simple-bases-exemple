@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc46e11d9de706766b20dd00c710481a",
+    "content-hash": "e29def329c851d7fdaa06227c93d7a06",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1368,16 +1368,16 @@
         },
         {
             "name": "fabio/laravel-simple-deploy",
-            "version": "0.0.15",
+            "version": "0.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabio-pv/laravel-simple-deploy.git",
-                "reference": "a67ce26471d6836c9ab66c795aa6ad3ed72f7875"
+                "reference": "ba8e0e3742a04887ec702878e8875e5b5e0304c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-deploy/zipball/a67ce26471d6836c9ab66c795aa6ad3ed72f7875",
-                "reference": "a67ce26471d6836c9ab66c795aa6ad3ed72f7875",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-deploy/zipball/ba8e0e3742a04887ec702878e8875e5b5e0304c4",
+                "reference": "ba8e0e3742a04887ec702878e8875e5b5e0304c4",
                 "shasum": ""
             },
             "require": {
@@ -1419,9 +1419,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fabio-pv/laravel-simple-deploy/issues",
-                "source": "https://github.com/fabio-pv/laravel-simple-deploy/tree/v0.0.15"
+                "source": "https://github.com/fabio-pv/laravel-simple-deploy/tree/v0.0.16"
             },
-            "time": "2020-12-07T17:39:30+00:00"
+            "time": "2020-12-07T19:07:40+00:00"
         },
         {
             "name": "fideloper/proxy",
