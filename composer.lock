@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89b1ee318812f17d4f5619a00cf312f2",
+    "content-hash": "e68d2544589fda7c520128c82fe7e142",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1303,16 +1303,16 @@
         },
         {
             "name": "fabio/laravel-simple-bases",
-            "version": "dev-master",
+            "version": "0.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabio-pv/laravel-simple-bases.git",
-                "reference": "c919d8decbe4af51931e73e251eada8cc72607c5"
+                "reference": "a09853dd3f2f2a44c7cf0aeb3cd2bcb0dab303b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/c919d8decbe4af51931e73e251eada8cc72607c5",
-                "reference": "c919d8decbe4af51931e73e251eada8cc72607c5",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-bases/zipball/a09853dd3f2f2a44c7cf0aeb3cd2bcb0dab303b5",
+                "reference": "a09853dd3f2f2a44c7cf0aeb3cd2bcb0dab303b5",
                 "shasum": ""
             },
             "require": {
@@ -1324,7 +1324,6 @@
                 "tymon/jwt-auth": "^1.0",
                 "webpatser/laravel-uuid": "^3.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1365,9 +1364,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fabio-pv/laravel-simple-bases/issues",
-                "source": "https://github.com/fabio-pv/laravel-simple-bases/tree/v0.8.7"
+                "source": "https://github.com/fabio-pv/laravel-simple-bases/tree/v0.8.8"
             },
-            "time": "2021-01-18T14:48:16+00:00"
+            "time": "2021-02-01T13:32:40+00:00"
         },
         {
             "name": "fabio/laravel-simple-deploy",
@@ -8860,7 +8859,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "fabio/laravel-simple-bases": 20,
         "fabio/laravel-simple-deploy": 20
     },
     "prefer-stable": true,

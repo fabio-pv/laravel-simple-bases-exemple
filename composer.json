@@ -9,7 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.4",
-        "fabio/laravel-simple-bases": "dev-master",
+        "fabio/laravel-simple-bases": "^0.8.8",
         "fabio/laravel-simple-deploy": "dev-master",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
