@@ -4,6 +4,7 @@
 namespace App\Services\v1;
 
 
+use App\Models\v1\Car;
 use LaravelSimpleBases\Services\BaseService;
 
 class UserService extends BaseService

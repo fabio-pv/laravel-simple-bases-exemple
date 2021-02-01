@@ -13,3 +13,23 @@ use Illuminate\Support\Facades\Route;
 | 22222
 */
 
+Route::get('/deploy', function () {
+
+    $data = [
+
+        'branch' => 'master',
+        'repository_name' => 'repository_name',
+        'html_url' => 'html_url',
+        'pusher_name' => 'pusher_name',
+        'time_total' => 20,
+        'posts' => [
+            'composer' => [],
+            'Git' => []
+        ],
+
+    ];
+
+    return view('laravel-simple-deploy::deploy', [
+        'data' => $data
+    ]);
+});
