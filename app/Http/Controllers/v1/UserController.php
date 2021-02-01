@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\v1;
 
+use App\Http\Permissions\v1\UserPermission;
 use App\Http\Validations\v1\UserValidation;
 use App\Models\v1\User;
 use App\Services\v1\UserService;
@@ -13,12 +14,14 @@ class UserController extends BaseController
     public function __construct(
         User $user,
         UserTransformer $userTransformer,
-        UserValidation $userValidation
+        UserValidation $userValidation,
+        UserPermission $userPermission
     )
     {
         $this->model = $user;
         $this->service = new UserService($this->model);
         $this->transformer = $userTransformer;
         $this->validation = $userValidation;
+        $this->permission = $userPermission;
     }
 }

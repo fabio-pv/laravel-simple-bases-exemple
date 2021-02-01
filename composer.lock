@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3d1ee5e05fe6dd2a218b09681a34adc",
+    "content-hash": "89b1ee318812f17d4f5619a00cf312f2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1303,7 +1303,7 @@
         },
         {
             "name": "fabio/laravel-simple-bases",
-            "version": "0.8.7",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabio-pv/laravel-simple-bases.git",
@@ -1324,6 +1324,7 @@
                 "tymon/jwt-auth": "^1.0",
                 "webpatser/laravel-uuid": "^3.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1370,22 +1371,23 @@
         },
         {
             "name": "fabio/laravel-simple-deploy",
-            "version": "0.0.18",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabio-pv/laravel-simple-deploy.git",
-                "reference": "65266d4c418c91940828ad39622f868219d64b28"
+                "reference": "33703fb6d1ceff6ed3c3a0816e0750081d13c47a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-deploy/zipball/65266d4c418c91940828ad39622f868219d64b28",
-                "reference": "65266d4c418c91940828ad39622f868219d64b28",
+                "url": "https://api.github.com/repos/fabio-pv/laravel-simple-deploy/zipball/33703fb6d1ceff6ed3c3a0816e0750081d13c47a",
+                "reference": "33703fb6d1ceff6ed3c3a0816e0750081d13c47a",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2.0",
                 "swiftmailer/swiftmailer": "^6.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1421,9 +1423,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fabio-pv/laravel-simple-deploy/issues",
-                "source": "https://github.com/fabio-pv/laravel-simple-deploy/tree/v0.0.18"
+                "source": "https://github.com/fabio-pv/laravel-simple-deploy/tree/v0.0.19"
             },
-            "time": "2020-12-08T20:37:20+00:00"
+            "time": "2020-12-28T17:08:46+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -8857,7 +8859,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "fabio/laravel-simple-bases": 20,
+        "fabio/laravel-simple-deploy": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
