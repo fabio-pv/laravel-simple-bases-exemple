@@ -10,18 +10,18 @@ use LaravelSimpleBases\Http\Permissions\BasePermission;
 class UserPermission extends BasePermission
 {
 
-     protected $permissions = [
+    protected $permissions = [
 
         'index' => [
             UserRole::ADMIN,
         ],
-
         'show' => [
             UserRole::ADMIN,
         ],
         'store' => [],
         'update' => [],
         'destroy' => [],
+
     ];
 
 }
